@@ -7,7 +7,7 @@ The core idea is to keep a normal price forecaster as the backbone, then add a s
 ## What Is Included
 
 - News-aware data loading in `data_provider/news_data_loader.py`.
-- Decay-aware model wrappers for DLinear, PatchTST, TimesNet, SegRNN, TimeMixer, Transformer, and iTransformer.
+- Decay-aware model wrappers for DLinear, PatchTST, TimesNet, TimeMixer, Transformer, and iTransformer.
 - A reusable backbone-agnostic adapter in `models/NewsDecayAdapter.py`.
 - Transformer cross-attention and interaction-fusion variants.
 - Experiment entry points:

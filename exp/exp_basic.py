@@ -1,8 +1,8 @@
 import os
 import torch
-from models import Transformer, DLinear, SegRNN, iTransformer, TimeMixer, PatchTST, TimesNet, iTransformerNewsDecay
+from models import Transformer, DLinear, iTransformer, TimeMixer, PatchTST, TimesNet, iTransformerNewsDecay
 from models import DLinearNewsDecay, PatchTSTNewsDecay, TimesNetNewsDecay
-from models import TimeMixerNewsDecay, SegRNNNewsDecay, TransformerNewsDecay
+from models import TimeMixerNewsDecay, TransformerNewsDecay
 from models import TransformerCrossAttentionNewsDecay, TransformerNewsInteractionFusion  #++
 from data_provider.data_factory import *
 from utils.tools import stringify_setting
@@ -13,7 +13,6 @@ class Exp_Basic(object):
         'DLinear': DLinear,
         'iTransformer': iTransformer,
         'TimeMixer': TimeMixer,
-        'SegRNN': SegRNN,
         'PatchTST': PatchTST,
         'TimesNet': TimesNet,
         'iTransformerNewsDecay': iTransformerNewsDecay,  #++
@@ -21,7 +20,6 @@ class Exp_Basic(object):
         'PatchTSTNewsDecay': PatchTSTNewsDecay,  #++
         'TimesNetNewsDecay': TimesNetNewsDecay,  #++
         'TimeMixerNewsDecay': TimeMixerNewsDecay,  #++
-        'SegRNNNewsDecay': SegRNNNewsDecay,  #++
         'TransformerNewsDecay': TransformerNewsDecay,  #++
         'TransformerCrossAttentionNewsDecay': TransformerCrossAttentionNewsDecay,  #++
         'TransformerNewsInteractionFusion': TransformerNewsInteractionFusion,  #++

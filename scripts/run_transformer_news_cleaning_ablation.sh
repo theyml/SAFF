@@ -57,7 +57,6 @@ news_model_name() {
     PatchTST) echo "PatchTSTNewsDecay" ;;
     TimesNet) echo "TimesNetNewsDecay" ;;
     TimeMixer) echo "TimeMixerNewsDecay" ;;
-    SegRNN) echo "SegRNNNewsDecay" ;;
     Transformer) echo "TransformerNewsDecay" ;;
     *) echo "Unsupported backbone: $1" >&2; exit 1 ;;
   esac
@@ -100,7 +99,6 @@ scored_news_file_for_ticker() {
 extra_backbone_args() {
   case "$1" in
     TimeMixer) echo "--down_sampling_method avg --down_sampling_layers 1 --down_sampling_window 2" ;;
-    SegRNN) echo "--seg_len 1" ;;
     *) echo "" ;;
   esac
 }

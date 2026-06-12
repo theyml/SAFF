@@ -226,7 +226,6 @@ news_model_name() {
     PatchTST) echo "PatchTSTNewsDecay" ;;
     TimesNet) echo "TimesNetNewsDecay" ;;
     TimeMixer) echo "TimeMixerNewsDecay" ;;
-    SegRNN) echo "SegRNNNewsDecay" ;;
     Transformer) echo "TransformerNewsDecay" ;;
     *)
       echo "Unsupported backbone for news adapter: $backbone" >&2
@@ -252,9 +251,6 @@ run_price_only() {
   case "$backbone" in
     TimeMixer)
       backbone_args=(--down_sampling_method avg --down_sampling_layers 1 --down_sampling_window 2)
-      ;;
-    SegRNN)
-      backbone_args=(--seg_len 1)
       ;;
   esac
   local -a optional_args=()
@@ -317,9 +313,6 @@ run_news_adapter() {
   case "$backbone" in
     TimeMixer)
       backbone_args=(--down_sampling_method avg --down_sampling_layers 1 --down_sampling_window 2)
-      ;;
-    SegRNN)
-      backbone_args=(--seg_len 1)
       ;;
   esac
   local -a optional_args=()

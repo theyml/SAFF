@@ -142,8 +142,6 @@ def get_basic_parser(
         parser.add_argument('--down_sampling_window', type=int, default=1, help='down sampling window size')
         parser.add_argument('--down_sampling_method', type=str, default=None,
                             help='down sampling method, only support avg, max, conv')
-        parser.add_argument('--seg_len', type=int, default=48,
-                            help='the length of segmen-wise iteration of SegRNN')
     # optimization
     parser.add_argument('--num_workers', type=int, default=10, help='data loader num workers')
     parser.add_argument('--itrs', type=int, default=1, help='experiments times')
