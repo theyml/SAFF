@@ -1,8 +1,12 @@
 # SAFF
 
+Code for **SAFF: Situation-Aware Financial Forecasting with Decay-Aware Semantic News Fusion**.
+
 SAFF is a research codebase for situation-aware financial forecasting with semantic news fusion. It extends a financial time-series forecasting stack with news-aware datasets, decay-aware residual adapters, cross-backbone experiments, and Transformer news-fusion ablations.
 
 The core idea is to keep a normal price forecaster as the backbone, then add a small learned temporal-decay module that turns recent headline embeddings into a horizon-specific news residual.
+
+Architecture figure: [`docs/figures/decay_aware_module_structure.pdf`](docs/figures/decay_aware_module_structure.pdf)
 
 ## What Is Included
 
