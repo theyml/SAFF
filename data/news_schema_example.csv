@@ -1,0 +1,4 @@
+Date,Article_title,Stock_symbol,news_emb_0,news_emb_1,news_emb_2,news_emb_3,zs_rel_weight,sentiment_score,duration_short_prob,duration_long_prob,duration_unsure_prob
+2024-08-28 21:00:00 UTC,Synthetic Apple product-demand headline,AAPL,0.12,-0.04,0.31,0.08,0.91,0.35,0.70,0.10,0.20
+2024-08-27 15:30:00 UTC,Synthetic Apple services-growth headline,AAPL,0.03,0.22,-0.15,0.11,0.83,0.20,0.45,0.35,0.20
+2024-08-22 18:10:00 UTC,Synthetic broad-market pressure headline,AAPL,-0.08,0.06,0.04,-0.19,0.42,-0.25,0.55,0.15,0.30

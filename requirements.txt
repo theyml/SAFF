@@ -1,0 +1,9 @@
+matplotlib
+numpy
+pandas
+pyunpack
+scikit-learn
+tqdm
+einops
+transformers
+# install pytorch and cuda following readme

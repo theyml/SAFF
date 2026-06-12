@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local environments
+.env
+.venv/
+venv/
+env/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Runtime artifacts
+logs*/
+outputs/
+results*/
+result_summaries/
+checkpoints/
+*.log
+*.out
+*.aux
+*.fls
+*.fdb_latexmk
+
+# Model weights and generated arrays
+*.pth
+*.pt
+*.ckpt
+*.npz
+*.npy
+
+# Large/private data exports. Keep only curated small examples in data/.
+data/*_news_aligned.csv
+data/*_finbert_emb*.csv
+data/*_text_views.csv
+data/*_body*.csv
+data/*_event_score*.csv
+data/*_novelty*.csv
+data/*_duration*.csv
+
+# Local machine sync helpers used during experiments.
+scripts/local_*.sh
+
+# Paper build artifacts
+ICDM26-IEEE-conference-template-062824/
+*.zip
